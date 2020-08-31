@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<style>
+		.number {
+			outline:0px;
+			border:none;
+			background-color:#737373;
+			color:#fff;
+			border-radius:40px;
+			height:40px;
+			width: 40px;
+			padding: 0px;
+			margin: 0px;
+			float: left;
+			font-size: 10pt;
+		
+		}
+		
+		.number:hover {
+			outline:0px;
+			border:none;
+			background-color:#000000;
+			color:#fff;
+			border-radius:40px;
+			height:40px;
+			width: 40px;
+			padding: 0px;
+			margin: 0px;
+			float: left;
+			font-size: 10pt;
+			
+		}
+		.operator {
+			outline:0px;
+			border:none;
+			background-color:#FF9B39;
+			color:#fff;
+			border-radius:40px;
+			height:40px;
+			width: 40px;
+			padding: 1px;
+			margin: 0px;
+			float: left;
+			font-size: 10pt;
+			
+		}
+		
+			.operator:hover {
+			outline:0px;
+			border:none;
+			background-color:#000000;
+			color:#fff;
+			border-radius:40px;
+			height:40px;
+			width: 40px;
+			padding: 0px;
+			margin: 0px;
+			float: left;
+			font-size: 10pt;
+			
+		}
+
+		.text {
+			outline:0px;
+			border:none;
+			background-color:#FF9B39;
+			color:#fff;
+			border-radius:40px;
+			height:40px;
+			width: 40px;
+			padding: 1px;
+			margin: 0px;
+			float: left;
+			font-size: 10pt;
+
+		}
+		.text:hover {
+			outline:0px;
+			border:none;
+			background-color:#000000;
+			color:#fff;
+			border-radius:40px;
+			height:40px;
+			width: 40px;
+			padding: 0px;
+			margin: 0px;
+			float: left;
+			font-size: 10pt;
+			
+		}
+		#display {
+			outline:0px;
+			border:none;
+			background-color:#1E1E1E;
+			color:#fff;
+			border-radius:10px;
+			height:40px;
+			width: 200px;
+			padding: 0px;
+			margin-bottom: 5px;
+			\*float: left;*\
+			font-size: 30pt;
+		}
+		
+		.inputRow {
+			width:100%;
+			float:left;
+			position:relative;
+			display:inline-block;
+			padding: 0px;
+		}
+		
+	</style>
+<title>calculator.html</title>
+</head>
+<body>
+	<form name="calculator">
+		
+		<div id="myCalculator">
+			
+		<div id="top_display">
+				
+		<input type="text" name="display" id="display" disabled>
+		<div class="inputRow">
+			
+		<input type="button" class="number" value="1" onlick="calculator.display.value +='1'">
+		<input type="button" class="number" value="2" onlick="calculator.display.value +='2'">
+		<input type="button" class="number" value="3" onlick="calculator.display.value +='3'">
+		<input type="button" class="operator" name="add" value="+" onlick="calculator.display.value +='+'">
+			<input type="button" class="operator" name="subtract" value="-" onlick="calculator.display.value +='-'">
+			
+			<div class="inputRow">
+		<input type="button" class="number" value="4" onlick="calculator.display.value +='4'">
+		<input type="button" class="number" value="5" onlick="calculator.display.value +='5'">
+		<input type="button" class="number" value="6" onlick="calculator.display.value +='6'">
+		
+		
+		<input type="button" class="operator" name="multiply" value="*" onlick="calculator.display.value +='*'">
+		<input type="button" class="operator" name="divide" value="/" onlick="calculator.display.value +='/'">
+		
+		
+				<div class="inputRow">
+		<input type="button" class="number" value="7" onlick="calculator.display.value +='7'">
+		<input type="button" class="number" value="8" onlick="calculator.display.value +='8'">
+		<input type="button" class="number" value="9" onlick="calculator.display.value +='9'">
+		<input type="button" class="text" value="C" onClick="calculator.display.value =''">
+		<input type="button" class="operator" name="equals" value="=" onlick="calculator.display.value = eval(calculator.display.value)">
+				
+				</div>
+				
+		<div class="inputRow">
+		
+		<input type="button" class="number" value="0" onlick="calculator.display.value +='0'">
+		<input type="button" class="number" value="." onlick="calculator.display.value +='.'">
+		
+				
+				</div>
+			
+			</div>
+			
+			
+		</div>
+		</div>
+		</div>
+	</form>
+</body>
+</html>
