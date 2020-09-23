@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<style>
+		.number {
+			outline:0px;
+			border:none;
+			background-color:#000;
+			color:#fff;
+			border-radius:0px;
+			height:40px;
+			width: 40px;
+			padding: 0px;
+			margin: 30px;
+			float: left;
+			font-family: "Lucida Console", Courier, monospace;
+			font-size: 20pt;
+			box-shadow: 10px 10px;
+		
+		}
+		
+		.number:hover {
+			outline:0px;
+			border:none;
+			background-color:lemonchiffon;
+			color:#000;
+			border-radius:0px;
+			height:40px;
+			width: 40px;
+			padding: 0px;
+			margin: 30px;
+			float: left;
+			font-family: "Lucida Console", Courier, monospace;
+			font-color: #000000;
+			font-size: 20pt;
+			box-shadow: 6px 6px;
+			
+		}
+		.operator {
+			outline:0px;
+			border:none;
+			background-color:#000;
+			color:#fff;
+			height:40px;
+			width: 40px;
+			padding: 1px;
+			margin: 30px;
+			float: left;
+			font-family: "Lucida Console", Courier, monospace;
+			font-size: 20pt;
+			border-radius:0px;
+			box-shadow: 10px 10px;
+			
+		}
+		
+			.operator:hover {
+			outline:0px;
+			border:none;
+			background-color:pink;
+			color:#000;
+			height:40px;
+			width: 40px;
+			padding: 0px;
+			margin: 30px;
+			float: left;
+			font-family: "Lucida Console", Courier, monospace;
+			font-size: 20pt;
+			border-radius:0px;
+			box-shadow: 6px 6px;
+			
+		}
+
+		.text {
+			outline:0px;
+			border:none;
+			background-color:#000;
+			color:#fff;
+			border-radius:0px;
+			height:40px;
+			width: 40px;
+			padding: 0px;
+			margin: 30px;
+			float: left;
+			font-family: "Lucida Console", Courier, monospace;
+			font-size: 20pt;
+			box-shadow: 10px 10px;
+
+		}
+		.text:hover {
+			outline:0px;
+			border:none;
+			background-color:pink;
+			color:#000;
+			border-radius:0px;
+			height:40px;
+			width: 40px;
+			padding: 0px;
+			margin: 30px;
+			float: left;
+			font-family: "Lucida Console", Courier, monospace;
+			font-size: 20pt;
+			box-shadow: 6px 6px;
+			
+		}
+		#display {
+			outline:0px;
+			border:none;
+			background: repeating-linear-gradient(-45deg, lemonchiffon, lemonchiffon 5px, white 5px, white 10px);
+			color:#000000;
+			height:200px;
+			width: 600px;
+			padding: 25px;
+			margin-left: 200px;
+			font-size: 80pt;
+			display: inline-block;
+			position: absolute;
+			z-index: -1;
+			box-shadow: 10px 10px;
+			font-family: "Lucida Console", Courier, monospace;
+		}
+		
+		#top_display {
+			width:100%;
+			display: inline-block;
+		}
+		
+		.inputRow {
+			width:100%;
+			float:left;
+			position:relative;
+			display:inline-block;
+			padding: 0px;
+			z-index: 2;
+		}
+		
+		.buttonsContain {
+		margin-top: 100px;
+		z-index: 2;
+		}
+		
+		.buttonsBG{
+		margin-top: 160px;
+		background: linear-gradient(70deg, lemonchiffon, pink, navy);
+		z-index: 1;
+		height:400px;
+		width:450px;
+		margin-left:50px;
+		box-shadow: 10px 10px;
+		
+			
+		}
+		body{
+		background: linear-gradient(240deg, peachpuff 50%, cornflowerblue 40%); 
+		}
+		
+		.wholeContain {
+		width:50%;
+		margin-left: auto;
+ 		 margin-right: auto;
+		margin-top:80px;
+		display: block;
+		}
+		
+	</style>
+<title>calculator.html</title>
+</head>
+<body>
+	<form name="calculator">
+		<div id="wholeContain">
+		<div id="myCalculator">
+			
+			<div id="top_display">
+				
+		<input type="text" name="display" id="display" disabled></div>
+		<div class="buttonsContain">
+			
+		<input type="button" class="number" value="1" onClick="calculator.display.value +='1'">
+		<input type="button" class="number" value="2" onClick="calculator.display.value +='2'">
+		<input type="button" class="number" value="3" onClick="calculator.display.value +='3'">
+		<input type="button" class="operator" name="add" value="+" onClick="calculator.display.value +='+'">
+			<input type="button" class="operator" name="subtract" value="-" onClick="calculator.display.value +='-'">
+			
+			<div class="inputRow">
+		<input type="button" class="number" value="4" onClick="calculator.display.value +='4'">
+		<input type="button" class="number" value="5" onClick="calculator.display.value +='5'">
+		<input type="button" class="number" value="6" onClick="calculator.display.value +='6'">
+		
+		
+		<input type="button" class="operator" name="multiply" value="*" onClick="calculator.display.value +='*'">
+		<input type="button" class="operator" name="divide" value="/" onClick="calculator.display.value +='/'">
+		
+		
+				<div class="inputRow">
+		<input type="button" class="number" value="7" onClick="calculator.display.value +='7'">
+		<input type="button" class="number" value="8" onClick="calculator.display.value +='8'">
+		<input type="button" class="number" value="9" onClick="calculator.display.value +='9'">
+		<input type="button" class="text" value="C" onClick="calculator.display.value =''">
+		<input type="button" class="operator" name="equals" value="=" onClick="calculator.display.value = eval(calculator.display.value)">
+				
+				</div>
+				
+		<div class="inputRow">
+		
+		<input type="button" class="number" value="0" onClick="calculator.display.value +='0'">
+		<input type="button" class="number" value="." onClick="calculator.display.value +='.'">
+		</div>
+				</div>
+				</div>
+			<div class="buttonsBG"></div>
+		
+			
+		</div>	
+		</div>
+		</div>
+</form>
+</body>
+</html>
