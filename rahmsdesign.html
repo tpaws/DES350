@@ -3,119 +3,405 @@
 <head>
 <meta charset="UTF-8">
 <title>PrinciplesOfDesign</title>
-	
+<meta name="viewport" content= "width=device-width, initial-scale=1.0">	
 <style>
 	
 .principle {
-		width:230px;
+		width:150px;
+		height: 700px;
 	    border-top: 3px solid;
-	    border-color: black;
-	    padding: 10px;
-		margin-top: 100px;
-	
+	    border-color: darkblue;
+	    padding: 7px;
+		margin-top: 0px;
+	mix-blend-mode: luminosity;
+	color: darkblue;
+			
 		}
+	@media only screen and (max-width: 480px){
+		
+	.principle {
+height: 350px;
+	}
+	}
+	
+	
+	
+	.principlecontain {
+		width:1300px;
+		height: 750px;
+		margin-top: 500px;
+		position:absolute;
+		
+	}
+	@media only screen and (max-width: 480px){
+		
+	.principlecontain {
+		
+		margin-top: 650px;
+		width:480px;
+
+	}
+	}
 	
 .column {
-  column-count: 2;
+  column-count: 4;
   column-gap: 40px;
-  margin-left: 130px;
+  margin-left: 220px;
+margin-top: 0px;
+	width: 60%;
+	}
+		
+		
+	@media only screen and (max-width: 480px){
+		
+	.column {
+	column-count: 2;
+  	column-gap: 10px;
+  	margin-left: 20px;
+	margin-top: 0px;
+	width: 100%;
+	}
+	}
 
-}
 
 	
 	
 	#title {
 		display: inline-block;
 		z-index: 0;
-		margin-left: 100px;
+		margin-left: 50px;
 		position:fixed;
-		font-size: 45px;
-		opacity: 0.6;
-		font-family: helvetica;
-		width: 1000px;
-		align: left;
+		opacity: 0.7;
+		width: 2800px;
 		mix-blend-mode: exclusion;
-		margin-top: 50px;
+		margin-top: 0px;
+ 
+		
 	}	
 	
+	@media only screen and (max-width: 480px){
+		
+	#title {
+
+		width: 720px;
+		height:550px;
+		transform: rotate(-90deg);
+		margin-left: 0px;
+		margin-top: 0px;
+		position:fixed;
+	}
+	}
+	
 	body {
+		background-color: lightgray;
 		font-family:helvetica;
 		font-size: 12px;
 		font-weight: bold;
+		color: blue:
+		
 		
 	}
 	
 	h1 {
-	font-size: 120px;
+	font-size: 190px;
+	font-family: helvetica;
+	line-height: 150px;
+	margin-top: 0;
+	 background: -webkit-linear-gradient(lime, salmon);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	padding-bottom: 50px;
+	}
+	
+		@media only screen and (max-width: 480px){
+		
+	h1 {
+font-size: 123px;
 	font-family: helvetica;
 	line-height: 100px;
-	margin-top: 0;
+	padding-bottom: 20px;
+	margin-top: -37px;
+	margin-left:-120px;
+	color: salmon;
+	}
 	}
 	
 	
 	h2 {
-	font-size: 30px;
+	font-size: 20px;
 	font-family: helvetica;
-	line-height: 30px;
+	line-height: 22px;
 	margin-top: 0;
+		color: darkblue;
 
 	
 	
 	}
 	
-		#white {
+		#one {
 	opacity: 0.7;
-	width: 400px;
+	width: 200px;
 	height: 770px;
-	background:#ffffff;
+	background:linear-gradient(to right, rgba(255,0,0,0), rgba(0,0,255,1));
 	position:absolute;
 	z-index: -1;
+	margin-top: 0px;
 	
 		
 	}
 	
-	
-	#pink {
-	opacity: 0.5;
-	width: 400px;
-	height: 900px;
-	background:#d1d0a9;
+		@media only screen and (max-width: 480px){
+		
+	#one {
+	width:50%;
+	height:400px;
+	}
+	}
+		#two {
+	opacity: 0.7;
+	width: 200px;
+	height: 770px;
+	background:linear-gradient(to right, rgba(255,255,0,0), rgba(0,0,255,1));
 	position:absolute;
-	margin-left: 0px;
+	z-index: -1;
+	margin-top: 0px;
+	margin-left: 200px;
+	mix-blend-mode: color-burn;
+		
+	}
+	
+			@media only screen and (max-width: 480px){
+		
+	#two {
+	width:50%;
+	height:400px;
+	margin-left:50%;
+	}
+	}
+	
+	
+	#three {
+	opacity: 0.7;
+	width: 400px;
+	height: 770px;
+	background:linear-gradient(to right, rgba(255,255,255,0), rgba(0,0,255,1));
+	position:absolute;
+	margin-left: 400px;
+	margin-top: 0px;
+	z-index: -1;
+	
+		
+	}		@media only screen and (max-width: 480px){
+		
+	#three{
+display: none;
+	}
+	}
+	
+	
+	#four {
+	opacity: 0.7;
+	width: 600px;
+	height: 770px;
+	background:linear-gradient(to right, rgba(255,255,0,0), rgba(0,0,255,1));
+	position:absolute;
+	margin-left: 800px;
+	margin-top: 0px;
+	z-index: -1;
+
+	
+		
+	}
+	
+				@media only screen and (max-width: 480px){
+		
+	#four{
+display: none;
+	}
+	}
+	
+			#five {
+	opacity: 0.7;
+	width: 200px;
+	height: 770px;
+	background:linear-gradient(to right, rgba(0,0,255,1), rgba(255,255,0,0));
+	position:absolute;
+	z-index: -1;
+	margin-top: 770px;
+	mix-blend-mode: exclusion;
+	
+		
+	}
+			@media only screen and (max-width: 480px){
+		
+	#five{
+		margin-top:400px;
+		width;50%;
+		height: 900px;
+
+	}
+	}
+		#six {
+	opacity: 0.7;
+	width: 200px;
+	height: 770px;
+	background:linear-gradient(to right, rgba(0,0,255,1), rgba(255,255,0,0));
+	position:absolute;
+	z-index: -1;
+	margin-top: 770px;
+	margin-left: 200px;
+	
+		
+	}
+	
+				@media only screen and (max-width: 480px){
+		
+	#six{
+		margin-top:400px;
+		width;50%;
+		height: 900px;
+		margin-left:50%;
+		
+		
+
+	}
+	}
+	
+	
+	#seven {
+	opacity: 0.7;
+	width: 400px;
+	height: 770px;
+	background:linear-gradient(to right, rgba(0,0,255,1), rgba(255,255,0,0));
+	position:absolute;
+	margin-left: 400px;
 	margin-top: 770px;
 	z-index: -1;
 	
 		
 	}
+			@media only screen and (max-width: 480px){
+		
+	#seven{
+display: none;
+	}
+	}
 	
-	#yellow{
+	#eight {
 	opacity: 0.7;
-	width: 900px;
+	width: 600px;
 	height: 770px;
-	margin-left: 400px;
-	background:#e2b765;
+	background:linear-gradient(to right, rgba(0,0,255,1), rgba(255,255,0,0));
 	position:absolute;
-	z-index: -1;
-	
-		
-	}
-	
-	
-		#loweryellow{
-	opacity: 0.7;
-	width: 900px;
-	height: 900px;
-	margin-left: 400px;
+	margin-left: 800px;
 	margin-top: 770px;
-	background:#ceac78;
+	z-index: -1;
+
+	
+		
+	}
+	
+			@media only screen and (max-width: 480px){
+		
+	#eight{
+display: none;
+	}
+	}
+	
+	
+
+	
+		#nine {
+	opacity: 0.7;
+	width: 200px;
+	height: 770px;
+	background:linear-gradient(to right, rgba(255,0,0,0), rgba(0,0,255,1));
 	position:absolute;
+	z-index: -1;
+	margin-top: 0px;
+	mix-blend-mode: exclusion;
+	margin-top: 1540px;
+	
+		
+	}
+	
+				@media only screen and (max-width: 480px){
+		
+	#nine{
+		margin-top:1300px;
+		width:50%;
+		height: 1200px;
+
+	}
+	}
+		#ten {
+	opacity: 0.7;
+	width: 200px;
+	height: 770px;
+	background:linear-gradient(to right, rgba(255,255,0,0), rgba(0,0,255,1));
+	position:absolute;
+	z-index: -1;
+	margin-left: 200px;
+	margin-top: 1540px;
+		
+	}
+	
+					@media only screen and (max-width: 480px){
+		
+	#ten{
+		margin-top:1300px;
+		width:50%;
+		height: 1200px;
+		margin-left: 50%;
+		
+		
+
+	}
+	}
+	
+	
+	#eleven {
+	opacity: 0.7;
+	width: 400px;
+	height: 770px;
+	background:linear-gradient(to right, rgba(255,255,255,0), rgba(0,0,255,1));
+	position:absolute;
+	margin-left: 400px;
+	margin-top: 1540px;
 	z-index: -1;
 	
 		
 	}
 	
+					@media only screen and (max-width: 480px){
+		
+	#eleven{
+		display: none;
+
+	}
+	}
 	
-	.wrapper {
+	#twelve {
+	opacity: 0.7;
+	width: 600px;
+	height: 770px;
+	background:linear-gradient(to right, rgba(255,255,0,0), rgba(0,0,255,1));
+	position:absolute;
+	margin-left: 800px;
+	margin-top: 1540px;
+	z-index: -1;
+
+	
+		
+	}
+	@media only screen and (max-width: 480px){
+		#twelve{
+		display: none;
+
+	}
+	}
+	
+		.wrapper {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
@@ -129,12 +415,15 @@ position: absolute;
 </head>
 
 <body>
-
-	<div id="pink"></div><div id="yellow"></div><div id="loweryellow"></div><div id="white"></div>
+	<div id="one"></div><div id="two"></div><div id="three"></div><div id="four"></div>
+	
+	<div id="five"></div><div id="six"></div><div id="seven"></div><div id="eight"></div>
+	
+	<div id="nine"></div><div id="ten"></div><div id="eleven"></div><div id="twelve"></div>
 <div id="title">
 	
-<h1>Dieter Rams<br>10 Principles of Design</h1></div>
-
+<h1>Dieter Rams<br>10 Principles <br>of Design</h1></div>
+<div class="principlecontain">
 <div class="column">
 <div class="principle">	
 <h2>1.<br>Good design is innovative</h2>
@@ -181,8 +470,7 @@ hidden cleverness, especially in web/digital products.
 <h2>7.<br> Good design is long-lasting</h2>
 Sustainability is important to objects that are special to the user, 
 however there are objects that should be disposable (I.E. packaging) 
-and an ethical life cycle should be considered. Also, I believe that
-contemporary design should be catered to specific groups so those
+and an ethical life cycle should be considered.Also, objects should be designed for specific groups so those
 objects will remain relevant for a life-time.
 </div>
 	
@@ -202,6 +490,7 @@ how that impacts
 <div class="principle">
 <h2>10.<br>Good design is as little design as possible</h2>
 </div>
+	</div>
 	</div>
 	
 </body>
