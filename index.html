@@ -39,21 +39,26 @@
 	}
 	
 	dropbtn {
-	font-size: 15px;
+	font-size: 18px;
 	line-height: 22px;
 	font-family: courier;
-	  background-color: #4CAF50;
-  color: none;
+ background-color: none;
+  color: black;
   padding: 16px;
   font-size: 16px;
   border: none;
 }
 
+/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
+	font-size: 15px;
+	line-height: 22px;
+	font-family: courier;
 }
 
+/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -61,8 +66,12 @@
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+	font-size: 15px;
+	line-height: 22px;
+	font-family: courier;
 }
 
+/* Links inside the dropdown */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -70,11 +79,14 @@
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #000000;}
 
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #ffffff;}
 	
 	
 </style>
@@ -88,31 +100,40 @@
 <div class="projectcontain">	
 <div class="projectrow">	
 	
-<div class="project">
+
+	<div class="project">
+	<div class="dropdown">
 	<button class="dropbtn">Project 1 – CSS Calculator</button>
 	  <div class="dropdown-content">
-	<a href="calculator-v2.html" target="_self">CSS Calculator</a><br>
-	<a href="calculator-april-02.png" target="_self">April Caculator AI</a><br>
-	<a href="calculator-april.html" target="_self">April Calculator</a><br>
+	<a href="calculator-v2.html" target="_self">CSS Calculator</a>
+	<a href="calculator-april-02.png" target="_self">April Caculator AI</a>
+	<a href="calculator-april.html" target="_self">April Calculator</a>
 	</div>
 </div>
+</div>
+
 	
-<div class="project">
+<div class="project"><div class="dropdown">
 	<button class="dropbtn">Project 2 – Dieter Rams Poster</button>
 	 <div class="dropdown-content">
-	<a href="rahmsdesign.html" target="_self">Dieter Rahms Swiss Poster</a><br>
-	<a href="rahmsdesign2.html" target="_self">Dieter Rahms Poster 2</a><br>
-	<a href="Project 2 sketches-05.png" target="_self">Dieter Rahms Swiss Poster AI</a><br>
+	<a href="rahmsdesign.html" target="_self">Dieter Rahms Swiss Poster</a>
+	<a href="rahmsdesign2.html" target="_self">Dieter Rahms Poster 2</a>
+	<a href="Project 2 sketches-05.png" target="_self">Dieter Rahms Swiss Poster AI</a>
 	</div>
+</div>
 </div>
 	
 <div class="project">
+<div class="dropdown">
 	<button class="dropbtn">Project 3 – CSS Self-Portrait</button>
 	 <div class="dropdown-content">
-	<a href="Portrait-02.png" target="_self">Portrait 1</a><br>
-	<a href="Portrait.png" target="_self">Portrait Final</a><br>
+	<a href="Portrait-02.png" target="_self">Portrait 1</a>
+	<a href="Portrait.png" target="_self">Portrait Final</a>
 	</div>
 </div>
+</div>
+	
+	
 </div>	
 </div>
 	
