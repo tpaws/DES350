@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Death Valley Park</title>
+<style>
+
+body {
+background-color: #a0b4de;
+font-family:helvetica;
+font-size: 16px;
+color: darkred;
+line-height: 26px;
+}
+	
+h1{
+font-weight: bold;
+font-size: 72px;
+line-height: 59px;
+}
+	
+h2{
+font-weight: bold;
+font-size: 24px;
+}
+	
+h3{
+font-weight: lighter;
+letter-spacing: 6px;
+}
+	
+h4{
+border: 2px solid darkred;
+font-weight: bold;
+padding: 5px;
+width: 6.5%;
+line-height: 18px;
+}
+	
+	
+h5{
+border: 2px solid white;
+font-weight: bold;
+padding: 5px;
+width: 25%;
+line-height: 18px;
+font-family:helvetica;
+font-size: 16px;
+color: white;
+line-height: 26px;
+}
+	
+	
+#title{
+width:40%;
+margin-top: 460px;
+margin-left: 5%;
+position:absolute;
+z-index: 10;
+}
+
+#info{
+width:20%;
+margin-top: 980px;
+margin-left: 10%;
+position:absolute;
+z-index: 10;
+}
+	
+#sqmi{
+width:20%;
+margin-top: 800px;
+margin-left: 10%;
+position:absolute;
+z-index: 10;
+}
+	
+#coord{
+width:35%;
+margin-top: 800px;
+margin-left: 30%;
+position:absolute;
+z-index: 10;
+}
+	
+	
+#est{
+width:15%;
+margin-top: 1400px;
+margin-left: 10%;
+position:absolute;
+z-index: 10;
+}
+	
+#place{
+width:15%;
+margin-top: 1400px;
+margin-left: 30%;
+position:absolute;
+z-index: 10;
+}
+	
+	
+#hiking{
+width:18%;
+margin-top: 1600px;
+margin-left: 10%;
+position:absolute;
+z-index: 10;
+}
+	
+#backpacking{
+width:18%;
+margin-top: 1800px;
+margin-left: 55%;
+position:absolute;
+z-index: 10;
+}
+	
+#camping{
+width:18%;
+margin-top: 2000px;
+margin-left: 10%;
+position:absolute;
+z-index: 10;	
+}
+	
+#mtnbk{
+width:18%;
+margin-top: 2200px;
+margin-left: 55%;
+position:absolute;
+z-index: 10;
+}
+	
+#bcrd{
+width:18%;
+margin-top: 2400px;
+margin-left: 10%;
+position:absolute;
+z-index: 10;
+
+}	
+	
+#sand {
+width:102%;
+height: 2500px;
+margin-top: 425px;
+margin-left: -2%;
+position:absolute;
+background: linear-gradient(#e79257, #a3926a);
+}
+
+	
+#mntncontain1 {
+width:102%;
+margin-top: 200px;
+margin-left: -2%;
+position:absolute;
+}
+
+	
+#mntncontain2 {
+width:102%;
+margin-top: 110px;
+margin-left: -2%;
+position:absolute;
+}
+	
+	
+#cloudcontain {
+width:90%;
+margin-top: 50px;
+margin-left: -2%;
+position:absolute;
+z-index: -2;
+}
+	
+    animation-name: movecloudcontain;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	}
+		
+		@-webkit-keyframes movecloudcontain {
+		
+		
+		  	0% {left: 0px;
+           }
+			50% {left: -10%;
+            }
+			100% {left: 0px;
+          } }
+	
+#path {
+width:35%;
+margin-top: 425px;
+margin-left: 55%;
+position:absolute;
+z-index: 2;
+}
+
+#rock {
+width:17%;
+margin-top: 1160px;
+margin-left: 60%;
+position:absolute;
+z-index: 4;
+}
+	
+	
+#footer {
+width:102%;
+height: 250px;
+margin-top: 2700px;
+margin-left: -2%;
+position:absolute;
+background: darkred;
+z-index: 4;
+}
+	
+#moreinfo{
+width:18%;
+margin-top: 2780px;
+margin-left: 10%;
+position:absolute;
+z-index: 10;
+font-family:helvetica;
+font-size: 16px;
+color: white;
+line-height: 26px;
+
+}	
+	
+#src{
+width:18%;
+margin-top: 2780px;
+margin-left: 75%;
+position:absolute;
+z-index: 10;
+font-family:helvetica;
+font-size: 16px;
+color: white;
+line-height: 26px;
+
+}	
+	
+
+
+
+	
+<script type="text/javascript" src="rellax.min.js"></script>
+</style>	
+</head>
+
+	
+	
+<body>
+<div id="mntncontain1"><img src="Mtn2.svg" alt=""/></div>
+<div id="mntncontain2" data-rellax-speed="-4"><img src="Mtn1.svg" alt=""/></div>
+<div id="cloudcontain" data-rellax-speed="-6"><img src="Clds.svg" alt=""/></div>
+<div id="path"><img src="Path.svg" alt=""/></div>
+<div id="rock"><img src="Rock.svg" alt=""/></div>
+<div id="sand"></div>
+<div id="footer"></div>
+	
+<!-- Start content -->
+
+<div id="title" data-rellax-speed="6"><h4><a href="https://www.nps.gov">Visit</a></h4><h1>Death<br>Valley<br>Park</h1></div>	
+<div id="sqmi" data-rellax-speed="6"><h3>5,270 mi²</h3></div>
+<div id="coord" data-rellax-speed="6"><h3>36° 14′ 31″ N, 116° 49′ 33″ W</h3></div>
+<div id="info" data-rellax-speed="6">In this below-sea-level basin, steady drought and record summer heat make Death Valley a land of extremes. Yet, each extreme has a striking contrast. Towering peaks are frosted with winter snow. Rare rainstorms bring vast fields of wildflowers. Lush oases harbor tiny fish and refuge for wildlife and humans. Despite its  morbid name, a great diversity of life survives in Death Valley.</div>
+<div id="est" data-rellax-speed="6"><h3>Est. October
+31, 1994</h3></div>
+<div id="place" data-rellax-speed="6"><h3>California,
+USA</h3></div>
+<div id="hiking" data-rellax-speed="6"><h2>Hiking</h2>From deep canyons to salt flats, sand dunes, and desert peaks, Death Valley is a hiker's paradise.</div>
+<div id="backpacking" data-rellax-speed="6"><h2>Backpacking</h2>Cross country adventures for a true wilderness experience.</div>
+<div id="camping" data-rellax-speed="6"><h2>Camping</h2>Death Valley has a variety of campgrounds from primitive to full hook-up.</div>
+<div id="mtnbk" data-rellax-speed="6"><h2>Mountain Biking</h2>Hundreds of miles of of dirt roads provide awesome mountain biking. Paved roads have narrow shoulders.</div>
+<div id="bcrd" data-rellax-speed="6"><h2>Backcountry Roads</h2>Death Valley has hundreds of miles of backcountry roads. From two-tracks to graded surfaces, there's something for all skill levels.</div>
+	
+
+	
+<div id="moreinfo">More information on...<br><h5><a href="https://www.nps.gov">nps.gov</a></h5></div>
+<div id="src">Source– <br>Wikipedia
+<br>nps.gov</div>
+
+
+
+	
+</body>
+</html>
